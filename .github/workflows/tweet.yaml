@@ -15,9 +15,10 @@ jobs:
         python-version: '3.10.8'
     - name: install dependencies
       run: pip install -r requirements.txt
+    - name: create auth directory
+      run: mkdir auth
     - name: read API keys
       run: |
-      mkdir auth
       echo "${{secrets.OPENAI_KEY}}" > auth/openai_key.txt
       echo "${{secrets.OPENAI_MODEL}}" > auth/open_model.txt
       echo "${{secrets.TWITTER_ACCESS_KEY}}" > auth/twitter_access_key.txt
