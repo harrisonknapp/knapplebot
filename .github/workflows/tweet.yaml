@@ -21,7 +21,7 @@ jobs:
     - name: read API keys
       run: |
         echo "${{secrets.OPENAI_KEY}}" > auth/openai_key.txt
-        echo "${{secrets.OPENAI_MODEL}}" > auth/open_model.txt
+        echo "${{secrets.OPENAI_MODEL}}" > auth/openai_model.txt
         echo "${{secrets.TWITTER_ACCESS_KEY}}" > auth/twitter_access_key.txt
         echo "${{secrets.TWITTER_ACCESS_SECRET}}" > auth/twitter_access_secret.txt
         echo "${{secrets.TWITTER_CONSUMER_KEY}}" > auth/twitter_consumer_key.txt
