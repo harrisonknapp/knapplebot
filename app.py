@@ -34,8 +34,3 @@ tweet_info = twitter_client.create_tweet(text=tweet_text,user_auth=True)
 
 print(f'Posted tweet "{tweet_text}"')
 print(f'Tweet ID: {tweet_info.id}')
-
-import datetime
-current_time = datetime.datetime.now()
-formatted_time = current_time.strftime("%Y-%m-%d %H:%M:%S")
-print('Run @ ' + formatted_time)
