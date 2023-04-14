@@ -33,4 +33,3 @@ tweet_text = tweet_text[:280]
 tweet_info = twitter_client.create_tweet(text=tweet_text,user_auth=True)
 
 print(f'Posted tweet "{tweet_text}"')
-print(f'Tweet ID: {tweet_info.id}')
